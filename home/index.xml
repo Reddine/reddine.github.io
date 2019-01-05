@@ -6,8 +6,8 @@
     <description>Recent content in Homes on Reddine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sat, 05 Jan 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://reddine.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://reddine.github.io/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/hero_carousel/</guid>
       <description></description>
@@ -24,16 +24,16 @@
     <item>
       <title></title>
       <link>https://reddine.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/about/</guid>
-      <description>Biography Hi! I&amp;rsquo;m Kheir Eddine FARFAR and welcome to my little corner of the internet. I currently work as a software engineer at Pinnovate where I spend my time building awesome tools for education. I am also a member of LabGED laboratory, My research interests include Artificial Neural networks, Time series, Short Term load forecasting.</description>
+      <description>Biography Hi! I&amp;rsquo;m Kheir Eddine FARFAR and welcome to my little corner of the internet. I currently work as a software engineer at Pinnovate where I spend my time building awesome tools for education. I am also a substitute teacher at the University of Annaba, My research interests include Artificial Neural networks, Machine learning, Time series, Short Term load forecasting.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
       <link>https://reddine.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/publications_selected/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title></title>
       <link>https://reddine.github.io/home/skills/</link>
-      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/skills/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Recent Publications</title>
       <link>https://reddine.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/publications/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Selected Talks</title>
       <link>https://reddine.github.io/home/talks_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/talks_selected/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://reddine.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/talks/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>Recent Posts</title>
       <link>https://reddine.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/posts/</guid>
       <description></description>
@@ -87,7 +87,7 @@
     <item>
       <title>Projects</title>
       <link>https://reddine.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/projects/</guid>
       <description></description>
@@ -96,16 +96,16 @@
     <item>
       <title>Teaching</title>
       <link>https://reddine.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/teaching/</guid>
-      <description></description>
+      <description> Badji Mokhtar Annaba University  2018: TP Matlab Department of Mines 2017: TP Techniques of AI - Electrical Engineering Department   </description>
     </item>
     
     <item>
       <title>Tags</title>
       <link>https://reddine.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/tags/</guid>
       <description></description>
@@ -114,7 +114,7 @@
     <item>
       <title>Search</title>
       <link>https://reddine.github.io/home/search/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/search/</guid>
       <description></description>
@@ -123,7 +123,7 @@
     <item>
       <title>Contact</title>
       <link>https://reddine.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://reddine.github.io/home/contact/</guid>
       <description></description>

@@ -6,9 +6,27 @@
     <description>Recent content in Reddine on Reddine</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sat, 05 Jan 2019 00:00:00 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Two Stage Short-Term Load Forecasting Approach Using Temperature Daily Profiles Estimation</title>
+      <link>https://reddine.github.io/publication/a-two-stage-short-term-load-forecasting-approach-using-temperature-daily-profiles-estimation/</link>
+      <pubDate>Mon, 08 Jan 2018 01:37:41 +0100</pubDate>
+      
+      <guid>https://reddine.github.io/publication/a-two-stage-short-term-load-forecasting-approach-using-temperature-daily-profiles-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Day Types Identification of Algerian Electricity Load Using an Image Based Two Stage Approach</title>
+      <link>https://reddine.github.io/publication/day-types-identification-of-algerian-electricity-load-using-an-image-based-two-stage-approach/</link>
+      <pubDate>Sat, 13 Aug 2016 01:43:59 +0100</pubDate>
+      
+      <guid>https://reddine.github.io/publication/day-types-identification-of-algerian-electricity-load-using-an-image-based-two-stage-approach/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
