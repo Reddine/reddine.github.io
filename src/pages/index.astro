@@ -7,8 +7,8 @@ const pageTitle = 'Reddine';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class="grid grid-flow-col grid-cols-6 gap-3">
-    <div class="col-start-1 col-end-4 mt-10 text-xl">
+  <div class="grid sm:grid-cols-1 md:grid-flow-col md:grid-cols-6 md:gap-3">
+    <div class="mt-10 text-xl sm:columns-1 md:col-start-1 md:col-end-4">
       <h1 class="mb-6 text-5xl font-bold">Hey, I'm Kheir Eddine</h1>
       <p class="mb-10">Welcome to my digital garden. 🌱</p>
       <p class="mb-10">I'm a Web and UI Software Engineer in Germany. I work on open-source projects and write about code, research, and life.</p>
@@ -24,8 +24,8 @@ const pageTitle = 'Reddine';
         </a>
       </p>
     </div>
-    <div class="col-start-5 mt-12">
-      <img class="w-100 h-100 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/assets/images/avatar.jpg" alt="My avatar">
+    <div class="mt-12 sm:columns-1 md:col-start-5">
+      <img class="w-100 h-100 rounded-full p-1 ring-2 ring-gray-300 dark:ring-gray-500" src="/assets/images/avatar.jpg" alt="My avatar" />
     </div>
   </div>
 </BaseLayout>
