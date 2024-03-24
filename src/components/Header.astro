@@ -1,0 +1,46 @@
+---
+import Navigation from './Navigation.astro';
+import ThemeIcon from './ThemeIcon.astro';
+---
+
+<header>
+  <div class="container relative mx-auto p-6">
+    <div class="flex items-center justify-between">
+      <!-- Menu Items -->
+      <Navigation />
+      <!-- Button -->
+      <ThemeIcon />
+
+      <!-- Hamburger Icon -->
+      <div id="menu-btn" class="hamburger focus:outline-none md:hidden">
+        <span class="line bg-slate-700 dark:bg-white"></span>
+        <span class="line bg-slate-700 dark:bg-white"></span>
+        <span class="line bg-slate-700 dark:bg-white"></span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div
+        id="menu"
+        class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold text-slate-700 drop-shadow-md dark:bg-slate-900 dark:text-white sm:w-auto sm:self-center"
+      >
+        <a href="/">Home</a>
+        <a href="/posts/">Posts</a>
+        <a href="/projects/">Projects</a>
+        <a href="/publications/">Publications</a>
+        <a href="/about/">About</a>
+      </div>
+    </div>
+  </div>
+</header>
+<script is:inline>
+  const btn = document.getElementById('menu-btn');
+  const nav = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    nav.classList.toggle('flex');
+    nav.classList.toggle('hidden');
+  });
+</script>

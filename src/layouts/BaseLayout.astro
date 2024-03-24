@@ -1,0 +1,38 @@
+---
+import '@/styles/prism-ghcolors.css';
+import '@/styles/global.css';
+
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
+const { pageTitle } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+  </head>
+
+  <body class="bg-white text-slate-700 dark:bg-slate-900 dark:text-white">
+    <Header />
+    <section class="container mx-auto flex min-h-screen flex-col px-3 py-10 lg:px-4">
+      <main class="min-h-xs flex-1 px-2 py-14 sm:py-20">
+        <slot />
+      </main>
+
+      <Footer />
+    </section>
+  </body>
+</html>

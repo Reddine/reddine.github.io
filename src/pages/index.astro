@@ -1,0 +1,31 @@
+---
+import Email from '@/icons/email.astro';
+import Github from '@/icons/github.astro';
+import X from '@/icons/x.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const pageTitle = 'Reddine';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="grid grid-flow-col grid-cols-6 gap-3">
+    <div class="col-start-1 col-end-4 mt-10 text-xl">
+      <h1 class="mb-6 text-5xl font-bold">Hey, I'm Kheir Eddine</h1>
+      <p class="mb-10">Welcome to my digital garden. 🌱</p>
+      <p class="mb-10">I'm a Web and UI Software Engineer in Germany. I work on open-source projects and write about code, research, and life.</p>
+      <p class="space-x-3">
+        <a href={'mailto:kfarfar@pinnovate.io'} aria-label="Email">
+          <Email />
+        </a>
+        <a href={'https://github.com/Reddine'} aria-label="GitHub">
+          <Github />
+        </a>
+        <a href={'https://x.com/reddines'} aria-label="X">
+          <X />
+        </a>
+      </p>
+    </div>
+    <div class="col-start-5 mt-12">
+      <img class="w-100 h-100 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/assets/images/avatar.jpg" alt="My avatar">
+    </div>
+  </div>
+</BaseLayout>
