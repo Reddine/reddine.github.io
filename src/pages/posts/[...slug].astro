@@ -9,7 +9,7 @@ export async function getStaticPaths() {
     //@ts-expect-error
     params: { slug: entry.slug },
     props: { entry },
-  }));
+  })) ?? [];
 }
 
 const { entry } = Astro.props;
