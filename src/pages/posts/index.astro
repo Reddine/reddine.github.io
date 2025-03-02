@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+
+import BlogPost from '@/components/BlogPost.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+let allPosts: any[];
+try {
+  allPosts = await getCollection('posts');
+} catch {
+  allPosts = [];
+}
+const pageTitle = 'Writing';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1 class="mb-10 text-5xl font-bold">Writing</h1>
+  {
+    allPosts?.length > 0 && (
+      <>
+        <ul class="list-disc space-y-3 pl-5 marker:text-sky-400">
+          {allPosts.map(post => (
+            <BlogPost url={'/posts/' + post.slug} title={post.data.title} />
+          ))}
+        </ul>
+      </>
+    )
+  }
+  {!allPosts && <>No posts yet!</>}
+</BaseLayout>

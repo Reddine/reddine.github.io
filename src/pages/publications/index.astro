@@ -1,0 +1,44 @@
+---
+import '@citation-js/plugin-bibtex';
+import '@citation-js/plugin-csl';
+
+// @ts-expect-error citation-js types are not updated
+import { Cite } from '@citation-js/core';
+import fs from 'fs';
+let publications: any = fs.readFileSync('src/content/publications/publications.bib').toString();
+publications = new Cite(publications);
+const getCitation = (reference: any) => {
+  let ref = new Cite(reference);
+  return ref.format('bibliography', {
+    format: 'html',
+    template: 'apa',
+    lang: 'en-US',
+  });
+};
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const pageTitle = 'Publications';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1 class="mb-10 text-5xl font-bold">Publications</h1>
+
+  <ul class="list-disc space-y-3 pl-5 marker:text-sky-400">
+    {
+      publications?.data.map((post: any, i: number) => (
+        <li>
+          <Fragment set:html={getCitation(post)} />
+          <small>
+            {post.URL && (
+              <a
+                href={post.URL}
+                class="ms-1 rounded border border-blue-500 bg-transparent px-2 py-1 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+              >
+                Link
+              </a>
+            )}
+          </small>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

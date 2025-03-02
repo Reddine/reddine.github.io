@@ -1,0 +1,74 @@
+---
+import ExternalLink from '@/icons/externalLink.astro';
+import Skull from '@/icons/skull.astro';
+import Star from '@/icons/star.astro';
+const { url, title, description, launchYear, demoUrl, sourceUrl, articleUrl, archiveUrl } = Astro.props;
+import { Octokit } from 'octokit';
+const githubToken = import.meta.env.OCTOKIT_GITHUB_AUTH_KEY;
+const octokit = new Octokit({ auth: githubToken });
+let stargazers_count = null;
+if (sourceUrl?.includes('github.com')) {
+  const githubObject = await octokit.request(`GET ${sourceUrl?.replace('https://github.com/', '/repos/')}`);
+  stargazers_count = githubObject.data.stargazers_count;
+}
+
+const buttonClassName =
+  'mb-2 me-2 inline-flex items-center rounded-lg border border-blue-700 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800';
+---
+
+<div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+  <div class="flex items-center justify-between rounded-t-md border-b border-gray-200 bg-gray-50 px-5 py-2.5 dark:border-gray-700 dark:bg-gray-800">
+    <span class="text-base font-medium text-gray-900 dark:text-white">{launchYear}</span>
+    {
+      stargazers_count && (
+        <span class="text-gray-500 dark:text-gray-400">
+          <Star /> {stargazers_count} stars
+        </span>
+      )
+    }
+    {
+      archiveUrl && (
+        <span class="text-gray-500 dark:text-gray-400">
+          <Skull /> defunct
+        </span>
+      )
+    }
+  </div>
+  <div class="p-6">
+    <a href={url ?? '#'}>
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+    {
+      articleUrl && (
+        <a href={articleUrl} class={buttonClassName}>
+          Article
+        </a>
+      )
+    }
+    {
+      sourceUrl && (
+        <a href={sourceUrl} class={buttonClassName}>
+          Source
+          <ExternalLink />
+        </a>
+      )
+    }
+    {
+      demoUrl && (
+        <a href={demoUrl} class={buttonClassName}>
+          Demo
+          <ExternalLink />
+        </a>
+      )
+    }
+    {
+      archiveUrl && (
+        <a href={archiveUrl} class={buttonClassName}>
+          Archive
+          <ExternalLink />
+        </a>
+      )
+    }
+  </div>
+</div>

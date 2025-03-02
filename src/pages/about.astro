@@ -1,0 +1,56 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const pageTitle = 'About';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1 class="mb-10 text-5xl font-bold">About</h1>
+  <div>
+    <p class="mb-2">
+      I'm Kheir Eddine خير الدين
+      <script is:inline>
+        function playName() {
+          const audioName = document.getElementById('myAudio');
+          audioName?.play();
+        }
+      </script>
+      (<button onclick="playName()" class="cursor-pointer">
+        <audio src="/assets/sounds/KheirEddine.wav" id="myAudio">
+          <track kind="captions" src="/assets/captions/KheirEddine.vtt" label="English" default />
+        </audio>
+        <img class="inline" height="23" width="23" src="/assets/images/algeria-flag.png" alt="Algerian flag" />
+        🔊
+      </button>) - Phd in Machine learning. Web and UI Software Engineer.
+    </p>
+
+    <p class="mb-2">
+      Currently, I am working on the <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="https://orkg.org/"
+        >Open Research Knowledge Graph</a
+      > project which captures semantically structured information about scientific contributions.
+    </p>
+
+    <p class="mb-2">
+      Previously, I was one of the core developers of a Learning Management System (LMS) offered as a SaaS product called <a
+        class="font-medium text-blue-600 hover:underline dark:text-blue-500"
+        href="https://www.coursella.com/">Coursella</a
+      >.
+    </p>
+
+    <p class="mb-2">
+      I received my PhD from the
+      <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="https://www.univ-annaba.dz">University of Annaba</a>
+      in Algeria where I had the chance to get in touch with semantic web concepts and explore Machine Learning. My research interests include Artificial
+      Neural networks, Machine learning, Time series, Mobile and Web Development.
+    </p>
+
+    <p class="mb-2">
+      Born and raised in <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="https://en.wikipedia.org/wiki/Annaba">Annaba</a
+      >, now based in Germany. When I'm not coding, I am either learning new things or playing football with my friends!
+    </p>
+
+    <p class="mb-2">
+      You can check out my <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="/projects/">projects</a> or explore my thoughts
+      on my <a class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="/posts/">blog</a>.
+    </p>
+  </div>
+</BaseLayout>
