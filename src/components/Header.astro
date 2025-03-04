@@ -6,20 +6,17 @@ import ThemeIcon from './ThemeIcon.astro';
 <header>
   <div class="container relative mx-auto p-6">
     <div class="flex items-center justify-between">
-      <!-- Menu Items -->
       <Navigation />
-      <!-- Button -->
+
       <ThemeIcon />
 
-      <!-- Hamburger Icon -->
-      <div id="menu-btn" class="hamburger focus:outline-none md:hidden">
+      <div id="menu-btn" class="hamburger focus:outline-hidden md:hidden">
         <span class="line bg-slate-700 dark:bg-white"></span>
         <span class="line bg-slate-700 dark:bg-white"></span>
         <span class="line bg-slate-700 dark:bg-white"></span>
       </div>
     </div>
 
-    <!-- Mobile Menu -->
     <div class="md:hidden">
       <div
         id="menu"
